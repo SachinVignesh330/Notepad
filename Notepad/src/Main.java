@@ -10,18 +10,18 @@ public class Main {
         frame.setSize(1920, 1080);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Create the text area
+        //text area
         JTextArea textArea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(textArea);
         frame.add(scrollPane);
 
-        // Create the menu bar
+        // menu bar
         JMenuBar menu_bar = new JMenuBar();
         JMenu file_menu = new JMenu("File");
         JMenu edit_menu = new JMenu("Edit") ;
         JMenu help_menu = new JMenu("Help");
 
-        // Create menu items
+        //menu items
         JMenuItem open_item = new JMenuItem("Open");
         JMenuItem save_item = new JMenuItem("Save");
         JMenuItem exit_item = new JMenuItem("Exit");
@@ -70,7 +70,7 @@ public class Main {
 
 
 
-        // File chooser for open/save
+        // File chooser
         JFileChooser fileChooser = new JFileChooser();
 
         // Open file
